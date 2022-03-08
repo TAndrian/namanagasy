@@ -1,23 +1,27 @@
 {
-  "name": "namanagasy",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "animejs": "^3.2.1",
-    "next": "^10.0.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  },
-  "devDependencies": {
-    "sass": "^1.32.0"
-  }
+	"name": "namanagasy",
+	"version": "0.2.0",
+	"private": false,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"format": "prettier --write .",
+		"check": "eslint --fix ."
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.34",
+		"@fortawesome/free-brands-svg-icons": "^5.15.2",
+		"@fortawesome/free-solid-svg-icons": "^5.15.2",
+		"@fortawesome/react-fontawesome": "^0.1.14",
+		"animejs": "^3.2.1",
+		"next": "^10.0.0",
+		"react": "16.13.1",
+		"react-dom": "16.13.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.9.0",
+		"prettier": "^2.5.1",
+		"sass": "^1.32.0"
+	}
 }
