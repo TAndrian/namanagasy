@@ -3,4 +3,8 @@
 @import "./vars.scss";
 @import "./mixins.scss";
 
+// Global styles
+@import "./container.scss";
+
 // Component styles
+@import "./Navbar.scss";

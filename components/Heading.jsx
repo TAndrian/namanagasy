@@ -5,10 +5,10 @@ import Head from "next/head";
 	Head tag of each page
 */
 
-const Heading({
+const Heading = ({
 	title = "",
-	description = "",
-	image = ""
+	image = "",
+	children = ""
 }) => (
 	<Head>
 		<meta charSet="utf-8" />
@@ -23,11 +23,11 @@ const Heading({
 		/>
 		<meta httpEquiv="language" content="en" />
 		<meta name="author" content="Hari13 <manjaka.rajaonson@gmail.com>" />
-		<meta name="description" content={ description } />
+		<meta name="description" content={ children || "" } />
 		<meta name="generator" content="NextJS" />
 		<meta httpEquiv="language" content="en" />
 		<meta property="og:title" content={ title } />
-		<meta property="og:description" content={ description } />
+		<meta property="og:description" content={ children || "" } />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="en_EN" />
 		<meta property="og:image" content={ image } />

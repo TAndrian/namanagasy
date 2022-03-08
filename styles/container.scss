@@ -1,0 +1,21 @@
+/*
+    Container
+*/
+
+.container {
+    @include flex-row(initial, flex-start);
+    width: 1400px;
+    margin: auto;
+    
+    @include screen-x(1700px) {
+        width: 1000px;
+    }
+
+    @include screen-x(1400px) {
+        width: 90%;
+    }
+
+    @include screen-x(900px) {
+        width: calc(100% - 20px);
+    }
+}

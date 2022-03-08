@@ -1,7 +1,6 @@
 import React from "react";
-import "../public/components/index.scss";
-import "styles/index.scss";
 import "helpers/icons";
+import "styles/index.scss";
 
 /*
 	Entry point
