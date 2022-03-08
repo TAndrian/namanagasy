@@ -1,0 +1,185 @@
+@import "../config";
+
+.nm-circuits {
+	width: 100%;
+	height: 100%;
+	.cover {
+		display: block;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		box-shadow: 0px 0px 4px black;
+		background: url(../../img/pirogue_morondava_namanagasy.jpg) center center no-repeat;
+		background-size: cover;
+		.overlay {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: rgba(37, 37, 37, 0.4);
+			.chameleon {
+				width: 250px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: 2;
+				@media only screen and (max-width: $nm-screen-sm) {
+					width: 150px;
+				}
+				@media only screen and (max-width: $nm-screen-xsm) {
+					width: 100px;
+				}
+			}
+			.diapo {
+				position: absolute;
+				bottom: 90px;
+				left: 0;
+				width: 70%;
+				height: 250px;
+				overflow: show;
+				@media only screen and (max-width: $nm-screen-sm) {
+					width: 65%;
+				}
+				@media only screen and (max-width: $nm-screen-xsm) {
+					width: 80%;
+					height: 180px;
+					bottom: 70px;
+				}
+				.item {
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding-left: 40px;
+					position: relative;
+					top: 0;
+					opacity: 0;
+					transition: all 0.7s ease-in;
+					.title {
+						text-align: left;
+						color: white;
+						text-shadow: 0px 1px 2px black;
+						color: $nm-color;
+						padding-bottom: 20px;
+						font-size: 50pt;
+						@media only screen and (max-width: 1200px) {
+							font-size: 40pt;
+						}
+						@media only screen and (max-width: 960px) {
+							font-size: 34pt;
+						}
+						@media only screen and (max-width: $nm-screen-sm) {
+							font-size: 24pt;
+						}
+						@media only screen and (max-width: $nm-screen-xsm) {
+							font-size: 20pt;
+							padding-bottom: 10px;
+						}
+					}
+					.separator {
+						display: block;
+						width: 100%;
+						height: 4px;
+						background: $nm-color;
+					}
+					.text {
+						padding-top: 20px;
+						color: white;
+						text-shadow: 0px 1px 2px black;
+						@media only screen and (max-width: $nm-screen-xsm) {
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+			.getting-started {
+				display: inline-block;
+				padding: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border: 3px $nm-color solid;
+				border-radius: 20px;
+				background: rgba(0, 0, 0, 0.4);
+				position: absolute;
+				bottom: 20px;
+				left: 40px;
+				color: $nm-color;
+				transition: all 0.2s ease-in-out;
+				&:hover {
+					background: $nm-color;
+					color: white;
+				}
+				@media only screen and (max-width: $nm-screen-md) {
+					padding-bottom: 14px;
+				}
+				@media only screen and (max-width: $nm-screen-sm) {
+					padding-bottom: 17px;
+				}
+				.icon {
+					display: inline;
+					width: 13px;
+					position: relative;
+					top: 3px;
+				}
+			}
+		}
+	}
+	.intro {
+		.list {
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding-top: 30px;
+			.item {
+				display: inline-block;
+				vertical-align: top;
+				width: 30%;
+				height: 300px;
+				overflow: hidden;
+				box-shadow: 0px 0px 2px black;
+				transition: all 0.2s ease-in-out;
+				margin: 10px;
+				&:hover {
+					box-shadow: 0px 0px 10px grey;
+				}
+				.overlay {
+					display: block;
+					width: 100%;
+					height: 100%;
+					background: transparent;
+					transition: all 0.2s ease-in-out;
+					&:hover {
+						background: rgba(0, 0, 0, 0.6);
+					}
+				}
+				.content {
+					display: block;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					position: relative;
+					top: -100%;
+					pointer-events: none;
+					.title, .price, .duration {
+						pointer-events: none;
+						text-align: center;
+					}
+					.title, .price {
+						color: white;
+						text-shadow: 0px 1px 2px black;
+						padding-bottom: 10px;
+					}
+					.title {
+						display: block;
+						padding-top: 110px;
+					}
+					.price {
+						font-style: italic;
+					}
+					.duration {
+						color: $nm-color;
+						text-shadow: 0px 1px 2px black;
+					}
+				}
+			}
+		}
+	}
+}

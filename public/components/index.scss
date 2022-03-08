@@ -1,0 +1,169 @@
+/*
+	Some global styling
+*/
+@import "./config";
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html, body, main, #__next, .nm-page {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: rgb(245, 245, 245);
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.nm-title {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: rgb(59, 67, 81);
+}
+.nm-title-xlg {
+    font-size: 50pt;
+}
+.nm-title-lg {
+    font-size: 40pt;
+}
+.nm-title-md {
+    font-size: 30pt;
+}
+.nm-title-sm {
+    font-size: 25pt;
+}
+.nm-title-xsm {
+    font-size: 20pt;
+}
+@media only screen and (max-width: $nm-screen-lg) {
+	.nm-title-xlg {
+    	font-size: 40pt;
+	}
+	.nm-title-lg {
+	    font-size: 30pt;
+	}
+	.nm-title-md {
+	    font-size: 25pt;
+	}
+	.nm-title-sm {
+	    font-size: 22pt;
+	}
+	.nm-title-xsm {
+	    font-size: 18pt;
+	}
+}
+@media only screen and (max-width: $nm-screen-md) {
+	.nm-title-xlg {
+    	font-size: 30pt;
+	}
+	.nm-title-lg {
+	    font-size: 25pt;
+	}
+	.nm-title-md {
+	    font-size: 22pt;
+	}
+	.nm-title-sm {
+	    font-size: 18pt;
+	}
+	.nm-title-xsm {
+	    font-size: 15pt;
+	}
+}
+@media only screen and (max-width: $nm-screen-xsm) {
+	.nm-title-xlg {
+    	font-size: 20pt;
+	}
+	.nm-title-lg {
+	    font-size: 18pt;
+	}
+	.nm-title-md {
+	    font-size: 16pt;
+	}
+	.nm-title-sm {
+	    font-size: 15pt;
+	}
+	.nm-title-xsm {
+	    font-size: 13pt;
+	}
+}
+.nm-text-colored {
+	color: rgb(90, 90, 90);
+}
+.nm-text {
+	text-align: justify;
+	font-size: 16pt;
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (max-width: $nm-screen-lg) {
+	.nm-text {
+		font-size: 15pt;
+	}
+}
+@media only screen and (max-width: $nm-screen-md) {
+	.nm-text {
+		font-size: 13pt;
+	}
+}
+@media only screen and (max-width: $nm-screen-sm) {
+	.nm-text {
+		font-size: 12pt;
+	}
+}
+@media only screen and (max-width: $nm-screen-xsm) {
+	.nm-text {
+		font-size: 11pt;
+	}
+}
+
+.nm-container {
+    display: block;
+    width: 75%;
+    margin: auto;
+    margin-top: 96px;
+    @media only screen and (max-width: $nm-screen-md) {
+    	width: 85%;
+    	margin-top: 76px;
+    }
+    @media only screen and (max-width: $nm-screen-xsm) {
+    	width: 90%;
+    }
+    .title1 {
+    	padding-bottom: 20px;
+    }
+    .separator {
+    	width: 30%;
+    	height: 3px;
+    	margin: auto;
+    	background: $nm-color;
+    }
+    .title2 {
+    	color: $nm-color;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    }
+}
+
+//Import components styling
+@import "./Nav/Nav";
+@import "./Cover/Cover";
+@import "./Contacts/Contacts";
+@import "./Footer/Footer";
+@import "./Custom404/Custom404";
+@import "./Home/Home";
+@import "./Testimonials/Testimonials";
+@import "./Circuits/Circuits";

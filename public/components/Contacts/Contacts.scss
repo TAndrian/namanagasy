@@ -1,0 +1,87 @@
+@import "../config";
+
+.nm-contacts {
+	background: url(../../img/fond_noir_baroque_namanagasy.jpg) center center no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+	box-shadow: 0px 0px 4px black;
+	.title {
+		text-align: left;
+		padding: 0;
+		margin: 0;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		color: white;
+		text-shadow: 0px 1px 2px black;
+		.icon {
+			width: 40px;
+		}
+	}
+	.separator {
+		display: block;
+		width: 100%;
+		height: 3px;
+		background: $nm-color;
+		box-shadow: 0px 1px 2px black;
+		margin-bottom: 20px;
+	}
+	.box {
+		width: 100%;
+		height: 250px;
+		@media only screen and (max-width: $nm-screen-sm) {
+			height: auto;
+		}
+		.left,
+		.right {
+			display: inline-block;
+			vertical-align: top;
+			width: 50%;
+			height: 100%;
+			@media only screen and (max-width: $nm-screen-sm) {
+				display: block;
+				width: 100%;
+				height: auto;
+				margin-bottom: 20px;
+			}
+			.flex {
+				display: flex;
+				width: 100%;
+				height: 100%;
+				justify-content: center;
+				align-items: center;
+				.content {
+					display: block;
+					width: 95%;
+					height: 90%;
+					background: rgba(255, 255, 255, 0.1);
+					padding: 0;
+					margin: 0;
+					li {
+						padding: 20px;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						color: rgb(220, 220, 220);
+						text-shadow: 0px 1px 2px black;
+						text-align: left;
+						.link {
+							color: rgb(220, 220, 220);
+							transition: all 0.2s ease-in-out;
+							&:hover {
+								color: $nm-color;
+							}
+						}
+						.icon {
+							width: 16px;
+							@media only screen and (max-width: $nm-screen-md) {
+								width: 13px;
+							}
+						}
+					}
+					.label {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
