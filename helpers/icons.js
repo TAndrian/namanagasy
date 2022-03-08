@@ -3,8 +3,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import {
 	faFacebook,
-	faInstagram,
-	faTripadvisor,
+	faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import {
 	faUser,
