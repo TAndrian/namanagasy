@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "components/Navbar";
 
 /*
 	Pages template
@@ -6,6 +7,7 @@ import React from "react";
 
 const Page = ({ children }) => (
 	<main>
+		<Navbar />
 		{ children }
 	</main>
 );

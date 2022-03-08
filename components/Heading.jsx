@@ -14,7 +14,7 @@ const Heading = ({
 		<meta charSet="utf-8" />
 		<title>{ title }</title>
 		<link rel="shortcut icon" href="/assets/namanagasy-logo.png" />
-		<meta name="theme-color" content="#eaac2a" />
+		<meta name="theme-color" content="#282828" />
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="robots" content="index, follow" />
 		<meta

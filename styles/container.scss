@@ -3,7 +3,6 @@
 */
 
 .container {
-    @include flex-row(initial, flex-start);
     width: 1400px;
     margin: auto;
     

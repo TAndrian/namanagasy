@@ -1,10 +1,8 @@
-// FastUI
+// FastUI and global styles
+@import "./mixins.scss";
+@import "./container.scss";
 @import "./fastui.css";
 @import "./vars.scss";
-@import "./mixins.scss";
-
-// Global styles
-@import "./container.scss";
 
 // Component styles
 @import "./Navbar.scss";

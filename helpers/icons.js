@@ -7,7 +7,11 @@ import {
 	faTripadvisor,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-	faUser
+	faUser,
+	faHome,
+	faPlane,
+	faGlobe,
+	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -23,4 +27,8 @@ library.add(
 	faInstagram,
 	// Standard icons
 	faUser,
+	faHome,
+	faPlane,
+	faGlobe,
+	faEnvelope,
 );
