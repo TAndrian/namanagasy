@@ -1,7 +1,5 @@
-import React, { Fragment } from "react";
-import Heading from "components/Heading";
-import Page from "components/Page";
-import CircuitList from "components/CircuitList";
+import React from "react";
+import CircuitsPageWrapper from "components/CircuitsPageWrapper";
 import { PageProvider } from "hooks/usePage";
 
 /*
@@ -9,16 +7,8 @@ import { PageProvider } from "hooks/usePage";
 */
 
 const CircuitsPage = () => (
-	<PageProvider>
-		<Heading
-			title="Trips to Madagascar for all budgets"
-			image="/images/covers/pirogue-morondava.jpg"
-		>
-			Affordable touristic circuits to Madagascar with experienced driver and guide.
-		</Heading>
-		<Page active={ 1 }>
-			<CircuitList />
-		</Page>
+	<PageProvider defaultLoading={ true }>
+		<CircuitsPageWrapper />
 	</PageProvider>
 );
 

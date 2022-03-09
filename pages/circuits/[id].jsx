@@ -14,7 +14,7 @@ const CircuitDetails = () => {
 	const { id } = router.query;
 
 	return (
-		<PageProvider>
+		<PageProvider defaultLoading={ true }>
 			<Heading
 				title="Baobabs Alley"
 				image="/images/covers/baobabs-alley-morondava.jpg"

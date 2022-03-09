@@ -13,8 +13,8 @@ import React, {
 const PageContext = createContext({});
 
 // Setup provider wrapper
-const PageProvider = ({ children }) => {
-	const [loading, setLoading] = useState(false);
+const PageProvider = ({ children, defaultLoading }) => {
+	const [loading, setLoading] = useState(defaultLoading ? true : false);
 
 	// Switch loading
 	const load = () => setLoading(true);

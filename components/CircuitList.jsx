@@ -1,14 +1,12 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import CircuitCard from "components/CircuitCard";
-import useCircuitList from "hooks/useCircuitList";
 
 /*
 	List of circuits
 */
 
-const CircuitList = () => {
-	const circuitList = useCircuitList();
+const CircuitList = ({ circuitList }) => {
 	const mappedCircuits = circuitList.map(circuit => (
 		<CircuitCard key={ uuidv4() } { ...circuit} />
 	));
