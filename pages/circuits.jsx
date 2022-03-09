@@ -16,7 +16,6 @@ const CircuitsPage = () => (
 			Affordable touristic circuits to Madagascar with experienced driver and guide.
 		</Heading>
 		<Page active={ 1 }>
-			<p className="pd-t-50 mg-t-25">Circuit list</p>
 			<CircuitList />
 		</Page>
 	</Fragment>
