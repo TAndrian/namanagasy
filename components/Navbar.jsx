@@ -12,7 +12,7 @@ const Navbar = ({ active }) => (
 			<div className="f-r-st-ce">
 				<img
 					className="navbar__logo w-60px mg-r-20"
-					src="images/namanagasy-logo.png"
+					src="/images/namanagasy-logo.png"
 					alt="Namanagasy logo"
 				/>
 				<h1 className="navbar__title fs-220 t">Namana Gasy</h1>
