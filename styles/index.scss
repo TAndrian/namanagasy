@@ -4,8 +4,13 @@
 @import "./fastui.css";
 @import "./vars.scss";
 
+main {
+	height: auto;
+}
+
 // Component styles
 @import "./Navbar.scss";
 @import "./CoverHome.scss";
 @import "./CircuitCard.scss";
 @import "./CircuitList.scss";
+@import "./Copyright.scss";

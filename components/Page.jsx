@@ -1,15 +1,21 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Navbar from "components/Navbar";
+import Copyright from "components/Copyright";
 
 /*
 	Pages template
 */
 
 const Page = ({ active, children }) => (
-	<main>
-		<Navbar active={ active }/>
-		{ children }
-	</main>
+	<Fragment>
+		<main>
+			<Navbar active={ active }/>
+			{ children }
+		</main>
+		<footer>
+			<Copyright />
+		</footer>
+	</Fragment>
 );
 
 export default Page;
