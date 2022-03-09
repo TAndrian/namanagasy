@@ -9,7 +9,7 @@ import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 const CircuitCard = () => (
 	<article className="circuit-card o-h bg-white b-b f-c-st-st tr-200">
 		<div className="circuit-card__representation o-h w-100">
-			<div className="w-100 h-100">
+			<div className="circuit-card__image-container w-100 h-100">
 				<Image
 					className="image w-100 h-100"
 					alt="Baobabs alley"
