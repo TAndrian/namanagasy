@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Heading from "components/Heading";
 import Page from "components/Page";
-import CircuitCard from "components/CircuitCard";
+import CircuitList from "components/CircuitList";
 
 /*
 	Circuits page
@@ -17,7 +17,7 @@ const CircuitsPage = () => (
 		</Heading>
 		<Page active={ 1 }>
 			<p className="pd-t-50 mg-t-25">Circuit list</p>
-			<CircuitCard />
+			<CircuitList />
 		</Page>
 	</Fragment>
 );

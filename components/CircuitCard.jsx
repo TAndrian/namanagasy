@@ -11,7 +11,7 @@ const CircuitCard = () => (
 		<div className="circuit-card__representation o-h w-100">
 			<div className="w-100 h-100">
 				<Image
-					className="w-100 h-100"
+					className="image w-100 h-100"
 					alt="Baobabs alley"
 					src="images/baobabs-morondava.jpg"
 				/>
@@ -31,7 +31,7 @@ const CircuitCard = () => (
 		</div>
 		<div className="circuit-card__about">
 			<div className="f-r-be-ce">
-				<h2 className="circuit-card__title fs-120 pd-10">Baobabs alley of the morondava super !</h2>
+				<h2 className="circuit-card__title fs-120 pd-10">Baobabs alley</h2>
 				<p className="circuit-card__duration pd-5 mg-r-10 fs-90 black">7 days</p>
 			</div>
 			<div className="circuit-card__separator mg-l-10"></div>

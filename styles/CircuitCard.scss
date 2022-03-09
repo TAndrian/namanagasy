@@ -1,6 +1,11 @@
 .circuit-card {
-	width: 290px;
+	width: 100%;
 	height: 400px;
+
+	@include screen-x(600px) {
+		height: auto;
+		padding-bottom: 10px;
+	}
 
 	&__title {
 		flex: 1;
@@ -9,6 +14,12 @@
 	&__representation {
 		height: 180px;
 		position: relative;
+		@include screen-x(600px) {
+			height: 250px;
+		}
+		@include screen-x(400px) {
+			height: 200px;
+		}
 	}
 
 	&__separator {
