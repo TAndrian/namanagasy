@@ -5,9 +5,9 @@ import Navbar from "components/Navbar";
 	Pages template
 */
 
-const Page = ({ children }) => (
+const Page = ({ active, children }) => (
 	<main>
-		<Navbar />
+		<Navbar active={ active }/>
 		{ children }
 	</main>
 );

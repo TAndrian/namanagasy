@@ -12,7 +12,9 @@ import {
 	faGlobe,
 	faEnvelope,
 	faBars,
-	faPencilAlt
+	faPencilAlt,
+	faInfoCircle,
+	faShare
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -33,5 +35,7 @@ library.add(
 	faGlobe,
 	faEnvelope,
 	faBars,
-	faPencilAlt
+	faPencilAlt,
+	faInfoCircle,
+	faShare
 );

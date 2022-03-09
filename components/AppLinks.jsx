@@ -12,13 +12,13 @@ const linkList = [
 		content: "Home",
 		icon: ["fas", "home"],
 		title: "Go to homepage.",
-		link: "#0"
+		link: "/"
 	},
 	{
 		content: "Circuits",
 		icon: ["fas", "plane"],
 		title: "Available circuits for this season.",
-		link: "#0"
+		link: "/circuits"
 	},
 	{
 		content: "Madagascar",
@@ -34,21 +34,26 @@ const linkList = [
 	}
 ];
 
-const mappedLinks = linkList.map((link, key) => (
-	<li className={ `app-links__item ${key === 0 && "app-links__item--active"}` } key={ uuidv4() }>
-		<Link href={ link.link } passHref>
-			<a className="app-links__link" title={ link.title }>
-				<Icon className="app-links__icon mg-r-5" icon={ link.icon } />
-				{ link.content }
-			</a>
-		</Link>
-	</li>
-));
+const AppLinks = ({ active }) => {
+	const mappedLinks = linkList.map((link, key) => (
+		<li
+			className={ `app-links__item ${key === active && "app-links__item--active"}` }
+			key={ uuidv4() }
+		>
+			<Link href={ link.link } passHref>
+				<a className="app-links__link" title={ link.title }>
+					<Icon className="app-links__icon mg-r-5" icon={ link.icon } />
+					{ link.content }
+				</a>
+			</Link>
+		</li>
+	));
 
-const AppLinks = () => (
-	<ul className="app-links">
-		{ mappedLinks }
-	</ul>
-);
+	return (
+		<ul className="app-links">
+			{ mappedLinks }
+		</ul>
+	);
+};
 
 export default AppLinks;

@@ -15,9 +15,8 @@ const Homepage = () => (
 		>
 			Hire a touristic driver guide to visit Madagascar.
 		</Heading>
-		<Page>
+		<Page active={ 0 }>
 			<CoverHome />
-			<h1>Hello world !</h1>
 		</Page>
 	</Fragment>
 );
