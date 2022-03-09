@@ -10,7 +10,7 @@ const circuitList = [
 	{
 		id: uuidv4(),
 		title: "Baobabs Alley",
-		image: "images/baobabs-morondava.jpg",
+		image: "/images/circuits/baobabs-alley-morondava.jpg",
 		price: 280,
 		duration: 7,
 		description: "Ut vel lorem a velit venenatis convallis mollis eu nisi. Aliquam consectetur ex sit amet ullamcorper vehicula. Nam in pretium velit. Sed volutpat dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus iaculis vitae."
@@ -18,15 +18,15 @@ const circuitList = [
 	{
 		id: uuidv4(),
 		title: "Sainte-Marie",
-		image: "images/sainte-marie-madagascar.jpg",
+		image: "/images/circuits/sainte-marie-madagascar.jpg",
 		price: 335,
 		duration: 5,
 		description: "Ut vel lorem a velit venenatis convallis mollis eu nisi. Aliquam consectetur ex sit amet ullamcorper vehicula. Nam in pretium velit. Sed volutpat dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus iaculis vitae."
 	},
 	{
 		id: uuidv4(),
-		title: "Morondava pirogue",
-		image: "images/pirogue-morondava.jpg",
+		title: "Côte Est",
+		image: "/images/circuits/côte-est.jpg",
 		price: 250,
 		duration: 4,
 		description: "Ut vel lorem a velit venenatis convallis mollis eu nisi. Aliquam consectetur ex sit amet ullamcorper vehicula. Nam in pretium velit. Sed volutpat dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus iaculis vitae."
@@ -34,7 +34,7 @@ const circuitList = [
 	{
 		id: uuidv4(),
 		title: "Tuléar et Grand Sud",
-		image: "images/tuléar-madagascar.jpg",
+		image: "/images/circuits/tuléar-madagascar.jpg",
 		price: 234,
 		duration: 4,
 		description: "Ut vel lorem a velit venenatis convallis mollis eu nisi. Aliquam consectetur ex sit amet ullamcorper vehicula. Nam in pretium velit. Sed volutpat dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus iaculis vitae."
@@ -42,7 +42,7 @@ const circuitList = [
 	{
 		id: uuidv4(),
 		title: "Traversée RN-7",
-		image: "images/rn7-madagascar.jpg",
+		image: "/images/circuits/rn7-madagascar.jpg",
 		price: 205,
 		duration: 3,
 		description: "Ut vel lorem a velit venenatis convallis mollis eu nisi. Aliquam consectetur ex sit amet ullamcorper vehicula. Nam in pretium velit. Sed volutpat dignissim scelerisque. Aenean molestie odio libero, vel condimentum risus iaculis vitae."
