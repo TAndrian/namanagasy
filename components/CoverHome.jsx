@@ -43,8 +43,8 @@ const CoverHome = () => {
 				<div className="cover-home__overlay w-100 h-100">
 					<div className="container h-100 f-c-st-st">
 						<div className="cover-home__top w-100 h-80 f-c-ce-ce o-h">
-							<h2 className="cover-home__title fs-400 white tx-c">Travel to Madagascar</h2>
-							<h3 className="cover-home__title2 t tx-c h-50px f-r-ce-ce mg-t-40 mg-b-40 fs-180">
+							<h2 className="cover-home__title white tx-c">Travel to Madagascar</h2>
+							<h3 className="cover-home__title2 t tx-c h-50px f-r-ce-ce mg-t-40 mg-b-40">
 								{ splittedText }
 							</h3>
 							<button
