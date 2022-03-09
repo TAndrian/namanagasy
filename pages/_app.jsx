@@ -6,7 +6,7 @@ import "styles/index.scss";
 	Entry point
 */
 
-const Namanagasy = ({Component, props}) => (
+const Namanagasy = ({ Component, props }) => (
 	<Component {...props}/>
 );
 
