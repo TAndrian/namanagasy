@@ -19,3 +19,4 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 styles/fastui.css
+bash.exe.stackdump

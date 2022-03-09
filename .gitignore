@@ -18,3 +18,4 @@ yarn-error.log*
 *.db
 package-lock.json
 yarn.lock
+bash.exe.stackdump

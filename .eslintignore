@@ -15,7 +15,7 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 .vercel
-tsconfig.tsbuildinfo
 *.db
 package-lock.json
 yarn.lock
+bash.exe.stackdump
