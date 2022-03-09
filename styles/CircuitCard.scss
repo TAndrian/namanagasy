@@ -65,6 +65,9 @@
 	&__data {
 		position: absolute;
 		top: 0;
+		.price-text {
+			text-shadow: 1px 1px 3px black;
+		}
 		.price {
 			background: rgba(0, 0, 0, 0.6);
 			border: 1px white solid;
