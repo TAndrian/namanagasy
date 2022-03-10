@@ -35,7 +35,7 @@ const Itinerary = () => {
 	));
 
 	return (
-		<div className="itinerary bg-white b-b h-100 o-a">
+		<div className="itinerary bg-white b-b o-a">
 			<h2 className="fs-180 pd-20"><Icon icon={ ["fas", "map-marker-alt"] } /> Antananarivo</h2>
 			<div className="itinerary__map mg-l-20 o-h br-5">
 				<MapContainer center={ position } zoom={ zoom } scrollWheelZoom={ false }>

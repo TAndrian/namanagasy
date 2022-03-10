@@ -41,7 +41,7 @@ const Planning = () => {
 	));
 
 	return (
-		<div className="planning bg-white b-b h-100 o-a">
+		<div className="planning bg-white b-b o-a">
 			<div className="planning__title pd-20 f-r-st-ce">
 				<div className="planning__separator bg-t w-10 mg-r-20"></div>
 				<h2 className="fs-180">
