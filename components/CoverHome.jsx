@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import Social from "components/Social";
+import { usePage } from "hooks/usePage";
 
 /*
 	Home cover
@@ -14,6 +16,7 @@ const textList = [
 ];
 
 const CoverHome = () => {
+	const { load } = usePage();
 	const [currentText, setCurrentText] = useState(0);
 	const [currentChar, setCurrentChar] = useState(0);
 
@@ -47,12 +50,18 @@ const CoverHome = () => {
 							<h3 className="cover-home__title2 t tx-c h-50px f-r-ce-ce mg-t-40 mg-b-40">
 								{ splittedText }
 							</h3>
-							<button
-								className="cover-home__check pd-10 pd-l-20 pd-r-20 br-5 p t tr-200"
-								title="Check list of available circuits for this season."
-							>
-								<Icon icon={ ["fas", "pencil-alt"] } /> Available circuits
-							</button>
+							<Link href="/circuits" passHref>
+								<a
+									className="cover-home__check pd-10 pd-l-20 pd-r-20 br-5 p t tr-200"
+									title="Check list of available circuits for this season."
+									onClick={() => {
+										if(typeof load === "function")
+											load();
+									}}
+								>
+									<Icon icon={ ["fas", "pencil-alt"] } /> Available circuits
+								</a>
+							</Link>
 						</div>
 						<div className="cover-home__bottom w-100 o-h f-c-ce-en">
 							<div className="cover-home__separator w-60 bg-t"></div>
