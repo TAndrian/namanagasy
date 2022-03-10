@@ -39,7 +39,10 @@ const Itinerary = () => {
 			<h2 className="fs-180 pd-20"><Icon icon={ ["fas", "map-marker-alt"] } /> Antananarivo</h2>
 			<div className="itinerary__map mg-l-20 o-h br-5">
 				<MapContainer center={ position } zoom={ zoom } scrollWheelZoom={ false }>
-					<TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+					<TileLayer
+						url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+						attribution="Madagascar"
+					/>
 					<RoutingMachine />
 					{/*<Marker position={ position }>
 						<Popup>Antananarivo</Popup>
