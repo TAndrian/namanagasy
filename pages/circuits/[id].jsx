@@ -5,6 +5,7 @@ import Page from "components/Page";
 import PageLoading from "components/PageLoading";
 import { PageProvider } from "hooks/usePage";
 import Planning from "components/Planning";
+import Itinerary from "components/Itinerary";
 
 /*
 	Circuit details
@@ -23,10 +24,10 @@ const CircuitDetails = () => {
 				Trip to Baobabs Alley for all budgets
 			</Heading>
 			<Page active={ 1 }>
-				<p className="pd-50 mg-50">Circuit id: { id }</p>
-				<div className="container f-r-be-st">
-					<div className="w-50">
+				<div className="circuit-details n-s">
+					<div className="circuit-details__main container w-100">
 						<Planning />
+						<Itinerary />
 					</div>
 				</div>
 			</Page>
