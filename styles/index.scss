@@ -4,6 +4,11 @@
 @import "./fastui.css";
 @import "./vars.scss";
 
+
+#__next {
+	overflow: visible;
+}
+
 main {
 	height: auto;
 }
