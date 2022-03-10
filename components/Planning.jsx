@@ -17,14 +17,18 @@ const planningList = [
 	"Curabitur eget quam rhoncus, lacinia quam gravida, convallis nibh."
 ];
 
-const Planning = () => {
+const Planning = ({ open }) => {
 	const [selected, setSelected] = useState(-1);
 
 	const mappedPlanning = planningList.map((planning, key) => (
 		<li
 			className={ `planning__item pd-10 pd-b-0 tr-200 br-5 p ${key === selected && "planning__item--active"}` }
 			key={ uuidv4() }
-			onClick={ () => setSelected(key) }
+			onClick={ () => {
+				setSelected(key);
+				if(typeof(open) === "function")
+					open(key);
+			}}
 		>
 			<div className="f-r-be-ce">
 				<p className="title b u p-n">

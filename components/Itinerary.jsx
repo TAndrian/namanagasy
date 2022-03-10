@@ -13,7 +13,7 @@ import RoutingMachine from "components/RoutingMachine";
 const zoom = 15;
 const position = [33.5024, 36.2988];
 
-const Itinerary = () => {
+const Itinerary = ({ opened, close }) => {
 	const slideList = [
 		"/images/circuits/baobabs-alley-morondava.jpg",
 		"/images/circuits/sainte-marie-madagascar.jpg",
@@ -34,9 +34,23 @@ const Itinerary = () => {
 		</div>
 	));
 
+	if(window.innerWidth > 900)
+		opened = true;
+
 	return (
-		<div className="itinerary bg-white b-b o-a">
-			<h2 className="fs-180 pd-20"><Icon icon={ ["fas", "map-marker-alt"] } /> Antananarivo</h2>
+		<div className={ `itinerary ${!opened ? "itinerary--closed" : ""} bg-white b-b o-a tr-400` }>
+			<div className="itinerary__title f-r-be-ce">
+				<h2 className="title fs-180 pd-20"><Icon icon={ ["fas", "map-marker-alt"] } /> Antananarivo</h2>
+				<button
+					className="close white bg-red pd-10 pd-l-20 pd-r-20 mg-r-20 br-5 tr-200 p"
+					onClick={() => {
+						if(typeof(close) === "function")
+							close();
+					}}
+				>
+					<Icon icon={ ["fas", "times-circle"] } /> Close
+				</button>
+			</div>
 			<div className="itinerary__map mg-l-20 o-h br-5">
 				<MapContainer center={ position } zoom={ zoom } scrollWheelZoom={ false }>
 					<TileLayer

@@ -1,4 +1,19 @@
 .itinerary {
+	@include screen-x(900px) {
+		position: fixed;
+		top: 76px;
+		left: 0;
+		z-index: 12;
+		width: 100%;
+		height: calc(100vh - 76px);
+		overflow: auto;
+	}
+
+	&--closed {
+		opacity: 0;
+		pointer-events: none;
+	}
+
 	&__map {
 		width: calc(100% - 46px);
 		min-height: 300px;
@@ -10,7 +25,18 @@
 
 	.slide {
 		width: calc(100% - 40px);
-		background: rgba(235, 235, 235);
+		@include screen-x(900px) {
+			height: 400px;
+		}
+		@include screen-x(700px) {
+			height: 300px;
+		}
+		@include screen-x(500px) {
+			height: 260px;
+		}
+		@include screen-x(400px) {
+			height: 220px;
+		}
 	}
 
 	.slide > div,
@@ -20,6 +46,40 @@
 	.each-slide > div {
 		width: 100%;
 		height: 100%;
+		background: rgba(235, 235, 235);
+	}
+
+	.title {
+		@include screen-x(900px) {
+			font-size: 1.6em;
+		}
+	}
+
+	.close {
+		display: none;
+		border: none;
+		&:hover {
+			background: lighten(red, 10%);
+		}
+		&:active {
+			background: darken(red, 10%);
+		}
+		@include screen-x(900px) {
+			display: inline-block;
+		}
+		@include screen-x(500px) {
+			margin-right: 0;
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__title {
+		@include screen-x(500px) {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: initial;
+		}
 	}
 }
 

@@ -17,7 +17,8 @@ import {
 	faShare,
 	faCar,
 	faCalendarAlt,
-	faMapMarkerAlt
+	faMapMarkerAlt,
+	faTimesCircle
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -43,5 +44,6 @@ library.add(
 	faShare,
 	faCar,
 	faCalendarAlt,
-	faMapMarkerAlt
+	faMapMarkerAlt,
+	faTimesCircle
 );

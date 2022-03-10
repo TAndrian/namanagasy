@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Heading from "components/Heading";
 import Page from "components/Page";
@@ -12,8 +12,12 @@ import Itinerary from "components/Itinerary";
 */
 
 const CircuitDetails = () => {
+	const [itineraryOpened, setItineraryOpened] = useState(false);
 	const router = useRouter();
 	const { id } = router.query;
+
+	const openItinerary = () => setItineraryOpened(true);
+	const closeItinerary = () => setItineraryOpened(false);
 
 	return (
 		<PageProvider defaultLoading={ false }>
@@ -26,8 +30,8 @@ const CircuitDetails = () => {
 			<Page active={ 1 }>
 				<div className="circuit-details n-s">
 					<div className="circuit-details__main container w-100">
-						<Planning />
-						<Itinerary />
+						<Planning open={ openItinerary }/>
+						<Itinerary opened={ itineraryOpened } close={ closeItinerary } />
 					</div>
 				</div>
 			</Page>
