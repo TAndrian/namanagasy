@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer/*, Marker, Popup*/ } from "react-leaflet";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { Slide } from "react-slideshow-image";
 import RoutingMachine from "components/RoutingMachine";

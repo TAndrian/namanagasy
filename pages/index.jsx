@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Heading from "components/Heading";
 import Page from "components/Page";
 import CoverHome from "components/CoverHome";

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Heading from "components/Heading";
 import Page from "components/Page";
-import PageLoading from "components/PageLoading";
 import { PageProvider } from "hooks/usePage";
 import Planning from "components/Planning";
 import Itinerary from "components/Itinerary";
