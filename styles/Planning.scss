@@ -1,0 +1,13 @@
+.planning {
+	&__separator {
+		width: 5px;
+		height: 40px;
+		border-radius: 3px;
+	}
+
+	&__item {
+		&:hover {
+			background: rgb(235, 235, 235);
+		}
+	}
+}
