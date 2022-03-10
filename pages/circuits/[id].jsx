@@ -17,6 +17,7 @@ const CircuitDetails = () => {
 
 	const openItinerary = () => setItineraryOpened(true);
 	const closeItinerary = () => setItineraryOpened(false);
+	console.log("Query details for ", id);
 
 	return (
 		<PageProvider defaultLoading={ false }>
