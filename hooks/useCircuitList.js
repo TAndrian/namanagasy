@@ -8,7 +8,7 @@ import { usePage } from "hooks/usePage";
 
 const useCircuitList = () => {
 	const [circuitList, setCircuitList] = useState([]);
-	const { loading, unload } = usePage();
+	const { unload } = usePage();
 
 	useEffect(() => {
 		getCircuitList()
