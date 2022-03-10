@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Heading from "components/Heading";
 import Page from "components/Page";
 import { PageProvider } from "hooks/usePage";
 import Planning from "components/Planning";
-import Itinerary from "components/Itinerary";
+// import Itinerary from "components/Itinerary";
+
+const Itinerary = dynamic(() => import("components/Itinerary"), {
+	ssr: false
+});
 
 /*
 	Circuit details
