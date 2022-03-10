@@ -5,9 +5,30 @@
 		border-radius: 3px;
 	}
 
+	.marker {
+		opacity: 0;
+	}
+
 	&__item {
+		border: 2px white solid;
 		&:hover {
 			background: rgb(235, 235, 235);
+			.marker {
+				opacity: 1;
+			}
 		}
+		&--active {
+			border: 2px $color-theme solid;
+			.marker {
+				opacity: 1;
+				background: $color-theme;
+				color: white;
+				box-shadow: none;
+			}
+		}
+	}
+
+	&__title {
+		position: sticky;
 	}
 }
